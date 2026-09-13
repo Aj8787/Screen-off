@@ -61,14 +61,14 @@ Off Time does not send activity or settings to the developer or a server, and do
 <h2>Permissions and background operation</h2>
 
 <p>
-Usage Access is optional to grant, but necessary to calculate totals. On supported versions of Android, notification permission can be granted for the optional ongoing summary.
+Usage Access is optional to grant, but necessary to calculate totals. Android manages visibility of the required background-service notice.
 </p>
 
 <p>
-Quiet widget refresh is the default. It uses Android's scheduled updates without keeping a foreground service running; refresh can be delayed by Android or the launcher. Opening Off Time recalculates totals from available usage history.
+Widgets refresh automatically while placed on the home screen. Opening Off Time recalculates totals from available usage history. Android or the launcher may delay scheduled background refresh.
 </p>
 <p>
-If you enable Live widget updates for a placed widget or the summary notification, a foreground service receives screen-state events and refreshes the displays. Android shows its required service notice and active-app indicator. Turn off both options to stop that service. A boot/package-update receiver restores eligible scheduling after a restart or update; Android restrictions may require reopening the app.
+While a widget is placed, a foreground service receives screen-state events and refreshes the widgets promptly. Android shows its required service notice and active-app indicator. Removing all widgets stops that service. A boot/package-update receiver restores eligible scheduling after a restart or update; Android restrictions may require reopening the app.
 </p>
 
 <h2>Retention and your choices</h2>
@@ -78,7 +78,7 @@ Saved settings remain until you change them, clear the app's storage or uninstal
 </p>
 
 <p>
-Disable Live widget updates and the summary to stop the foreground service. Removing all widgets also stops the service when the summary is off. Clearing app storage or uninstalling removes the app's saved local settings.
+Remove all Off Time widgets to stop the foreground service. Clearing app storage or uninstalling removes the app's saved local settings.
 </p>
 
 <h2>Intended audience</h2>
