@@ -38,7 +38,7 @@ Off Time is an Android app developed by Saiyed Adil. It calculates screen-off ti
 </p>
 
 <p>
-<strong>Effective date:</strong> 11 September 2026<br>
+<strong>Effective date:</strong> 13 September 2026<br>
 <strong>Android package:</strong> <code>io.github.aj8787.offtime</code>
 </p>
 
@@ -65,7 +65,10 @@ Usage Access is optional to grant, but necessary to calculate totals. On support
 </p>
 
 <p>
-A foreground service may run while a home-screen widget is placed or the summary is enabled, to receive screen-state events and refresh the displays. Android controls the foreground-service notification. A boot/package-update receiver restores eligible widget scheduling after a restart or update; Android restrictions may require reopening the app.
+Quiet widget refresh is the default. It uses Android's scheduled updates without keeping a foreground service running; refresh can be delayed by Android or the launcher. Opening Off Time recalculates totals from available usage history.
+</p>
+<p>
+If you enable Live widget updates for a placed widget or the summary notification, a foreground service receives screen-state events and refreshes the displays. Android shows its required service notice and active-app indicator. Turn off both options to stop that service. A boot/package-update receiver restores eligible scheduling after a restart or update; Android restrictions may require reopening the app.
 </p>
 
 <h2>Retention and your choices</h2>
@@ -75,8 +78,14 @@ Saved settings remain until you change them, clear the app's storage or uninstal
 </p>
 
 <p>
-Remove the widgets and disable the summary to stop their foreground service. Clearing app storage or uninstalling removes the app's saved local settings.
+Disable Live widget updates and the summary to stop the foreground service. Removing all widgets also stops the service when the summary is off. Clearing app storage or uninstalling removes the app's saved local settings.
 </p>
+
+<h2>Intended audience</h2>
+<p>Off Time is a personal screen-time utility intended for teenagers aged 13 and older and adults. It is not designed specifically for young children. It does not offer social messaging, advertising or user accounts.</p>
+
+<h2>External links</h2>
+<p>Opening this policy in your browser connects to GitHub Pages, which may process standard web-request information under GitHub's privacy practices. Contacting support uses your chosen email app. Off Time does not embed website trackers or send your screen-state history to those services.</p>
 
 <h2>Changes to this policy</h2>
 
